@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Validador de Formulários</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Validador de Formulários</h1>
+
+    <form id="form">
+      <label>Nome de utilizador
+        <input id="username" placeholder="4 a 15 caracteres (letras, números, _)" />
+        <small class="hint">Ex.: rafael_costa</small>
+      </label>
+
+      <label>E-mail
+        <input id="email" type="email" placeholder="exemplo@dominio.com" />
+      </label>
+
+      <label>Senha
+        <input id="password" type="password" placeholder="Mín. 8, maiúscula, minúscula e número/símbolo" />
+      </label>
+
+      <button type="submit">Validar</button>
+      <p id="result"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
